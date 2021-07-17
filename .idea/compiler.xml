@@ -12,6 +12,8 @@
         <module name="springcloud-consumer-dept-80" />
         <module name="springcloud-eurkea-7003" />
         <module name="springcloud-eurkea-7002" />
+        <module name="springcloud-provider-dept-8003" />
+        <module name="springcloud-provider-dept-8002" />
         <module name="springcloud-eureka-7001" />
       </profile>
     </annotationProcessing>

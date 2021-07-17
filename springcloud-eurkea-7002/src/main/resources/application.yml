@@ -3,7 +3,7 @@ server:
 eureka:
   instance:
 # eureka服务器名字
-    hostname: 127.0.0.1
+    hostname: eureka7002.com
   client:
     # 是否向Eureka注册中心注册自己（这个模块本身是服务器，所以不需要）
     register-with-eureka: false
@@ -11,6 +11,9 @@ eureka:
     fetch-registry: false
     # Eureka监控页面~
     service-url:
-        defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      #重写Eureka的默认端口以及访问路径 --->http://localhost:7001/eureka/
+      # 单机： defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      # 集群（关联）：7001关联7002、7003
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7003.com:7003/eureka/
 
 

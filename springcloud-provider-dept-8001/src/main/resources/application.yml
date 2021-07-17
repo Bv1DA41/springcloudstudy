@@ -6,7 +6,7 @@ mybatis:
   mapper-locations: classpath:mybatis/mapper/*.xml
 spring:
   application:
-    name: springcloudd-provider-dept
+    name: springcloud-provider-dept
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -18,7 +18,8 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:7001/eureka/
+      #defaultZone: http://localhost:7001/eureka/    关联三个eureka集群
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
   instance:
     instance-id: springcloud-provider-dept8001 #修改Eureka上的默认描述信息
 
