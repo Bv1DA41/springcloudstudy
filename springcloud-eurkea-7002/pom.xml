@@ -9,7 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springcloud-eureka-7001</artifactId>
+    <artifactId>springcloud-eurkea-7002</artifactId>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -22,5 +23,4 @@
             <artifactId>spring-boot-devtools</artifactId>
         </dependency>
     </dependencies>
-
 </project>
