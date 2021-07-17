@@ -25,6 +25,6 @@ eureka:
 # info配置
 info:
 # 项目的名称
-app.name: springcloud-provider-dept
+  app.name: springcloud-provider-dept
 # 公司的名称
-company.name: 郑州财经学院
+  company.name: 郑州财经学院
