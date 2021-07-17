@@ -2,20 +2,20 @@ package com.kuang.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
  * @BelongsProject: springcloud
  * @BelongsPackage: com.kuang.springcloud
  * @Author: cxy
- * @Date: 2021/7/16 19:27
+ * @Date: 2021/7/17 12:37
  * @Description: TODO
  */
-
 @SpringBootApplication
-@EnableEurekaClient
-public class DeptProvider_8001 {
+//EnableEurekaServer服务端的启动类，可以接受别人注册进来
+@EnableEurekaServer
+public class EurekaServer_7001 {
     public static void main(String[] args) {
-        SpringApplication.run(DeptProvider_8001.class, args);
+        SpringApplication.run(EurekaServer_7001.class, args);
     }
 }

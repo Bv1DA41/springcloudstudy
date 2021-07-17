@@ -1,0 +1,17 @@
+server:
+  port: 7001
+eureka:
+  instance:
+# eureka服务器名字
+    hostname: 127.0.0.1
+  client:
+    # 是否向Eureka注册中心注册自己（这个模块本身是服务器，所以不需要）
+    register-with-eureka: false
+    # fetch-registry如果是false，表示自己是注册中心，客户端为true
+    fetch-registry: false
+    # Eureka监控页面~
+    service-url:
+        defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+
+
