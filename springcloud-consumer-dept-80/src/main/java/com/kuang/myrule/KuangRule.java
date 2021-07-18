@@ -21,7 +21,7 @@ public class KuangRule {
         //return new RoundRobinRule();//使用轮询策略
         //return new AvailabilityFilteringRule();//使用轮询策略
         //return new RetryRule();//使用轮询策略
-        return new KuangRandomRule();//默认是轮询RandomRule,现在自定义为自己的
+        return new RandomRule();//默认是轮询RandomRule,现在自定义为自己的
 
     }
 }
