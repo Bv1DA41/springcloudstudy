@@ -12,6 +12,12 @@
     <artifactId>springcloud-provider-dept-8001</artifactId>
 
     <dependencies>
+        <!--hystrix依赖-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-hystrix</artifactId>
+            <version>1.4.6.RELEASE</version>
+        </dependency>
         <!--eureka依赖-->
         <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-eureka -->
         <dependency>
