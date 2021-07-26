@@ -5,9 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @BelongsProject: springcloud
- * @BelongsPackage: springcloud
+ * @BelongsPackage: kuang.springcloud
  * @Author: cxy
- * @Date: 2021/7/25 16:23
+ * @Date: 2021/7/25 16:34
  * @Description: TODO
  */
 @SpringBootApplication

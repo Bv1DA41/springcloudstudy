@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @BelongsProject: springcloud
- * @BelongsPackage: springcloud.controller
+ * @BelongsPackage: kuang.springcloud.controller
  * @Author: cxy
- * @Date: 2021/7/25 16:20
+ * @Date: 2021/7/25 16:34
  * @Description: TODO
  */
 @RestController
